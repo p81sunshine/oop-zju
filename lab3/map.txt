@@ -1,0 +1,29 @@
+9
+Lobby
+Courtyard
+Kitchen
+Dining Room
+Bedroom
+Treasure Room
+Tower
+Cellar
+sanctum
+0 east 1
+0 north 6
+1 west 0
+1 north 2
+1 south 3
+2 south 1
+2 up 8
+2 west 6
+3 north 1
+3 east 4
+4 west 3
+4 up 5
+5 down 4
+6 south 0
+6 west 7
+6 east 2
+7 east 6
+8 down 2
+8 south 5
