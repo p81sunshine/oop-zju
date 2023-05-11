@@ -17,7 +17,19 @@ Fraction::operator std::string() const
 
 Fraction Fraction::from_decimal(double x)
 {
-    return Fraction();
+    int sign = x < 0 ? -1 : 1;
+
+    x *= sign;
+    int power = 1;
+    int count = 1;
+    while (floor(x * power) != ceil(x * power) && count <= 10)
+    {
+        power *= 10;
+        count++;
+    }
+
+    return Fraction(x * power, power);
+    
 }
 
 bool Fraction::operator<(const Fraction &rhs) const
