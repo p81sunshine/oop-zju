@@ -9,7 +9,7 @@ public:
 public:
     Fraction() = default;
     Fraction(int n, int d) : denominator(d), numerator(n){}
-    Fraction(const Fraction &f) :numerator(f.numerator) , denominator(f.denominator){}
+    Fraction(const Fraction &f) : denominator(f.denominator), numerator(f.numerator) {}
 
     bool operator<(const Fraction &rhs) const;
     bool operator>(const Fraction &rhs) const;
@@ -23,6 +23,7 @@ public:
     Fraction operator-(const Fraction &rhs) const;
     Fraction operator*(const Fraction &rhs) const;
     Fraction operator/(const Fraction &rhs) const;
+    Fraction& operator=(const Fraction &rhs) ;
 
     operator double() const;
     operator std::string() const; 

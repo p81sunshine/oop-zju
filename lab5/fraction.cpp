@@ -82,9 +82,19 @@ Fraction Fraction::operator/(const Fraction &rhs) const
     return Fraction(numerator * rhs.denominator, denominator * rhs.numerator);
 }
 
+Fraction& Fraction::operator=(const Fraction &rhs) 
+{
+    if (this != &rhs)
+    {
+        this->denominator = rhs.denominator;
+        this->numerator = rhs.numerator;
+    }
+
+    return *this;
+}
+
 std::istream &operator>>(std::istream &is, Fraction &fraction)
 {
-    int n,d;
     char slash;
     is >> fraction.numerator >> slash >> fraction.denominator;
     return is;
