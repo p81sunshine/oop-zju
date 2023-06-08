@@ -1,0 +1,12 @@
+bin/
+build/
+dbfiles/
+datas/
+.vscode/
+.idea/
+cmake-build-debug/
+cmake-build-release/
+cmake-build-debug-wsl
+ref/
+old/
+
