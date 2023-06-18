@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMLWrapperSerializer>
+    <UserDefinedStruct>
+        <vector>
+            <c val="99"/>
+            <c val="98"/>
+            <c val="100"/>
+        </vector>
+        <string val="Hello World!"/>
+        <i val="2"/>
+    </UserDefinedStruct>
+</XMLWrapperSerializer>

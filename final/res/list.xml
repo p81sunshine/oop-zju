@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMLWrapperSerializer>
+    <list>
+        <d val="1"/>
+        <d val="2.2000000000000002"/>
+        <d val="3.2999999999999998"/>
+    </list>
+</XMLWrapperSerializer>

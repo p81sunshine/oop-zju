@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XMLWrapperSerializer>
-    <i>2</i>
+    <set>
+        <i val="1"/>
+        <i val="2"/>
+        <i val="3"/>
+    </set>
 </XMLWrapperSerializer>

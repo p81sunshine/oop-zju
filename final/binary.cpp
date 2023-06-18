@@ -1,9 +1,11 @@
 #include "binary.h"
+#include "UserDefinedType.h"
 
 namespace serializer
 {
     namespace binary
     {
+
         template <typename T>
         void serialize(const T &t, std::ofstream &out)
         {
@@ -151,6 +153,14 @@ namespace serializer
                 t.insert(temp);
             }
         }
+
+        template <>
+        void deserialize(UserDefinedType &t, std::ifstream &in)
+        {
+            deserialize(t.data, in);
+            deserialize(t.idx, in);
+            deserialize(t.name, in);
+        }
         template <typename T>
         void deserialize(std::list<T> &t, std::ifstream &in)
         {
@@ -163,5 +173,14 @@ namespace serializer
                 t.push_back(temp);
             }
         }
+
+#define BEGINREGISTER_STRUCT_SERIALIZEBIN std::ofstream out("./res/out.bin", std::ios::binary);
+#define REGISTER_STRUCT_MEMBER_SERIALIZE_BIN(t, memberName) serialize(t.memberName, out);
+#define END_REGISTERSTRUCT_SERIALIZE_BIN() out.close();
+
+#define BEGIN_REGISTER_STRUCT_DESERIALIZEBIN() std::ifstream in("./res/out.bin", std::ios::binary);
+#define REGISTER_STRUCT_MEMBERDESERIALIZE_BIN(t, memberName) deserialize(t.memberName, in);
+#define END_REGISTER_STRUCT_DESERIALIZE_BIN() in.close();
+
     }
 }

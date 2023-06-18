@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMLWrapperSerializer>
+    <map>
+        <pair>
+            <i val="1"/>
+            <set>
+                <i val="1"/>
+                <i val="2"/>
+                <i val="3"/>
+            </set>
+        </pair>
+        <pair>
+            <i val="2"/>
+            <set>
+                <i val="1"/>
+                <i val="2"/>
+                <i val="3"/>
+            </set>
+        </pair>
+    </map>
+</XMLWrapperSerializer>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMLWrapper>
+    <UserDefinedStruct>
+        <vector>
+            <i val="1"/>
+            <i val="2"/>
+            <i val="3"/>
+            <i val="4"/>
+        </vector>
+        <string val="UserDefine"/>
+        <pair>
+            <i val="1"/>
+            <string val="xx"/>
+        </pair>
+    </UserDefinedStruct>
+</XMLWrapper>

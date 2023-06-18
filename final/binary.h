@@ -6,6 +6,8 @@
 #include <list>
 #include <set>
 #include <map>
+#include "UserDefinedType.h"
+
 namespace serializer
 {
     namespace binary
@@ -67,6 +69,7 @@ namespace serializer
         template <typename T>
         void serialize(const std::list<T> &t, std::ofstream &out);
 
+
         template <typename T>
         void deserialize(T &t, std::string filename);
 
@@ -90,6 +93,12 @@ namespace serializer
 
         template <typename T>
         void deserialize(std::list<T> &t, std::ifstream &in);
+
+
+
+
+
+
     }
 }
 
