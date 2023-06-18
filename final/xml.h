@@ -26,12 +26,12 @@ namespace serializer
 
 #define XMLREGISTER_STRUCT_MEMBER_SERIALIZE(t, memberName) serialize(t.memberName, doc, elem);
 #define XMLEND_REGISTERSTRUCT_SERIALIZE() \
-    doc->SaveFile("UserDefineType.xml");  \
+    doc->SaveFile("./res/UserDefineType.xml");  \
     delete doc;
 
 #define XMLBEGIN_REGISTER_STRUCT_DESERIALIZEBIN() \
     XMLDocument *doc_ = new XMLDocument();        \
-    doc_->LoadFile("UserDefineType.xml");         \
+    doc_->LoadFile("./res/UserDefineType.xml");         \
     std::string tag_ = "XMLWrapper";              \
     XMLElement *elem_ = doc->FirstChildElement(tag_.c_str())->FirstChildElement();
 #define XMLREGISTER_STRUCT_MEMBERDESERIALIZE_1(t, memberName) \

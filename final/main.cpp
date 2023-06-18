@@ -2,7 +2,6 @@
 #include <string>
 #include <typeinfo>
 #include "binary.h"
-#include "UserDefinedType.h"
 #include "test_utility.h"
 #include "xml.h"
 

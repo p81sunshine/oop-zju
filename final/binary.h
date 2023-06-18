@@ -6,7 +6,6 @@
 #include <list>
 #include <set>
 #include <map>
-#include "UserDefinedType.h"
 
 namespace serializer
 {

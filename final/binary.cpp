@@ -1,5 +1,4 @@
 #include "binary.h"
-#include "UserDefinedType.h"
 
 namespace serializer
 {
@@ -154,13 +153,6 @@ namespace serializer
             }
         }
 
-        template <>
-        void deserialize(UserDefinedType &t, std::ifstream &in)
-        {
-            deserialize(t.data, in);
-            deserialize(t.idx, in);
-            deserialize(t.name, in);
-        }
         template <typename T>
         void deserialize(std::list<T> &t, std::ifstream &in)
         {

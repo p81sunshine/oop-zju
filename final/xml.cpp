@@ -1,16 +1,16 @@
 #include "xml.h"
 #include "tinyxml2.h"
-#include "UserDefinedType.h"
 #include <typeinfo>
 #include <iostream>
+#include <string>
 using namespace tinyxml2;
 
 namespace serializer
 {
     namespace xml
     {
-        const string tag = "XMLWrapperSerializer";
-        const string value = "val";
+        const std::string tag = "XMLWrapperSerializer";
+        const std::string value = "val";
         template <typename T>
         void serialize(const T &t, const std::string &filename)
         {
