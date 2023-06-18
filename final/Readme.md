@@ -5,9 +5,9 @@ I implement binary serialization/deserialization as well as XML serialization/de
 ## Compile and Run
 
 - compile
-`g++ main.cpp tinyxml2.cpp -g -std=c++17`
+`make -j`
 - run
-`./a.out`
+`./main`
 
 ## Test and results
 
