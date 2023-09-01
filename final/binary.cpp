@@ -21,6 +21,7 @@ namespace serializer
             out.write(t.c_str(), size);
         }
 
+        // Wrapper for serialization
         template <typename T>
         void serialize(const T &t, const std::string &filename)
         {
